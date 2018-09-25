@@ -18,6 +18,10 @@ class SubscribeTest(TestCase):
         self.assertTemplateUsed(self.resp, 'subscriptions/subscription_form.html')
 
 
+    #def test_subscription_link(self):
+    #    self.assertContains(self.resp, 'href="/inscricao/"')
+
+
     def test_html(self):
         """Html must contain input tags"""
         self.assertContains(self.resp, '<form')
